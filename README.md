@@ -24,3 +24,16 @@ enum Direction {
     Right = "RIGHT",
 }
 ```
+
+### Generics
+
+```TypeScript
+class Test<T> {
+    data: T
+}
+
+const test1 = new Test<string>();
+const test2 = new Test<number>();
+test1.data = 'Hello';
+test2.data = 123;
+```
