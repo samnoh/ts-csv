@@ -5,7 +5,7 @@
 ### Enums
 
 -   Define a set of named constants
--   Numeric and String-based
+-   Numeric and string-based
 
 ```TypeScript
 enum Direction {
