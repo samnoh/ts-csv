@@ -1,5 +1,5 @@
 import { CsvFileReader } from './CsvFileReader';
+import { MatchReader, MatchResult } from './MatchReader';
 import { dateStringToDate } from './utils';
-import { MatchResult } from './enums';
 
-export { CsvFileReader, dateStringToDate, MatchResult };
+export { CsvFileReader, dateStringToDate, MatchReader, MatchResult };
