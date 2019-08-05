@@ -1,3 +1,4 @@
+import { AverageGoalsAnalysis } from './AverageGoalsAnalysis';
 import { WinsAnalysis } from './WinsAnalysis';
 
-export { WinsAnalysis };
+export { AverageGoalsAnalysis, WinsAnalysis };

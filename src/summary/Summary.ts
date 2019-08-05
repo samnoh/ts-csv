@@ -1,5 +1,5 @@
 import { MatchData } from '../match';
-import { WinsAnalysis } from '../match/analyzers';
+import { AverageGoalsAnalysis, WinsAnalysis } from '../match/analyzers';
 import { ConsoleReport, HtmlReport } from './reports';
 
 export interface Analyzer {
@@ -11,6 +11,14 @@ export interface OutputTarget {
 }
 
 export class Summary {
+    static averageGoalsAnalysisWithHtmlReport(team: string): Summary {
+        return new Summary(new AverageGoalsAnalysis(team), new HtmlReport());
+    }
+
+    static averageGoalsAnalysisWithConsoleReport(team: string): Summary {
+        return new Summary(new AverageGoalsAnalysis(team), new ConsoleReport());
+    }
+
     static winsAnalysisWithHtmlReport(team: string): Summary {
         return new Summary(new WinsAnalysis(team), new HtmlReport());
     }
