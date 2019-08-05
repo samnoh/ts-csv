@@ -40,3 +40,21 @@ const test2 = new Test<number>();
 test1.data = 'Hello';
 test2.data = 123;
 ```
+
+### Git Revert & Reset
+
+-   Revert and create a new commit
+
+```bash
+git revert HEAD~3.. # revert to a point before recent three commits
+git commit -m "Revert A, B, C"
+git push origin master
+```
+
+-   Delete prev commits
+-   Use with care
+
+```bash
+git reset --hard HEAD~ # revert to the last commit
+git push -f origin master # force push
+```
