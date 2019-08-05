@@ -41,6 +41,15 @@ test1.data = 'Hello';
 test2.data = 123;
 ```
 
+```TypeScript
+const printArr = <T>(arr: T[]): void => {
+    for(let i = 0; i< arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+printArr<string>(['a', 'b', 'c']);
+```
+
 ### Git Revert & Reset
 
 -   Revert and create a new commit
