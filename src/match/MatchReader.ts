@@ -10,14 +10,14 @@ interface DataReader {
 
 export class MatchReader {
     static fromCsv(filename: string): MatchReader {
-        return new MatchReader(new CsvFileReader(filename));
+        return new MatchReader(new CsvFileReader(filename)).load();
     }
 
     matches: MatchData[] = [];
 
     constructor(public reader: DataReader) {}
 
-    load() {
+    load(): MatchReader {
         this.reader.read();
         this.matches = this.reader.data.map(
             (row: string[]): MatchData => [
@@ -30,5 +30,7 @@ export class MatchReader {
                 row[6]
             ]
         );
+
+        return this;
     }
 }
