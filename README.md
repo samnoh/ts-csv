@@ -27,6 +27,9 @@ enum Direction {
 
 ### Generics
 
+-   Define the type of a property/argument/return value at a future point
+-   Used for writing resuable code
+
 ```TypeScript
 class Test<T> {
     data: T
