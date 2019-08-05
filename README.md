@@ -55,7 +55,7 @@ printArr<string>(['a', 'b', 'c']);
 -   Revert and create a new commit
 
 ```bash
-git revert HEAD~3.. # revert to a point before recent three commits
+git revert --no-commit HEAD~3.. # revert to a point before recent three commits
 git commit -m "Revert A, B, C"
 git push origin master
 ```
