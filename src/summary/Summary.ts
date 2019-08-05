@@ -1,5 +1,5 @@
 import { MatchData } from '../match';
-import { AverageGoalsAnalysis, WinsAnalysis } from '../match/analyzers';
+import { AverageGoalsAnalysis, WinsAnalysis } from './analyzers';
 import { ConsoleReport, HtmlReport } from './reports';
 
 export interface Analyzer {
