@@ -1,4 +1,4 @@
-# TypeScript CSV
+# TypeScript Football Analysis
 
 ## TIL
 
