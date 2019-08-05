@@ -1,8 +1,8 @@
 import { CsvFileReader } from './utils';
 import { MatchReader } from './match';
-import { ConsoleReport } from './reports';
-import { WinsAnalysis } from './analyzers';
 import { Summary } from './summary';
+import { WinsAnalysis } from './analyzers';
+import { ConsoleReport } from './reports';
 
 const csvFileReader = new CsvFileReader('data/football.csv');
 const matchReader = new MatchReader(csvFileReader);
