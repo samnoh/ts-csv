@@ -1,4 +1,4 @@
 import { CsvFileReader } from './CsvFileReader';
-import { dateStringToDate } from './utils';
+import { dateStringToDate, htmlTemplate } from './utils';
 
-export { CsvFileReader, dateStringToDate };
+export { CsvFileReader, dateStringToDate, htmlTemplate };
